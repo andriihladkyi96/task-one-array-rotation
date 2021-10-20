@@ -20,5 +20,9 @@ function ConvertString(str){
     localStr = localStr.slice(0,localStr.length-1);
   }
 
-  return localStr.split(',');
+  let array = localStr.split(',');
+
+  array = array.map(element => element.trim());
+
+  return array;
 }
